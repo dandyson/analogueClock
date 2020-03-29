@@ -1,0 +1,87 @@
+/* BASIC STYLES */
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clock {
+  border: 15px solid black;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+/* CLOCK FACE */
+
+#twelve {
+  position: relative;
+  top: 20px;
+  left: 190px;
+  transform: rotate(90deg);
+  width: 20px;
+  border: 2px solid black;
+}
+
+#three {
+  position: relative;
+  top: 190px;
+  left: 360px;
+  width: 20px;
+  border: 2px solid black;
+}
+
+#six {
+  position: relative;
+  top: 360px;
+  left: 190px;
+  transform: rotate(90deg);
+  width: 20px;
+  border: 2px solid black;
+}
+
+#nine {
+  position: relative;
+  top: 190px;
+  left: 10px;
+  width: 20px;
+  border: 2px solid black;
+}
+
+/* CLOCK HANDS */
+.hands {
+  transform-origin: center right;
+}
+
+#hourHand {
+  transform-origin: bottom;
+  position: absolute;
+  top: 270px;
+  left: 690px;
+  height: 79px;
+  width: 7px;
+  background-color: black;
+}
+
+#minuteHand {
+  transform-origin: bottom;
+  position: absolute;
+  top: 229px;
+  left: 690px;
+  height: 120px;
+  width: 7px;
+  background-color: red;
+}
+
+#secondHand {
+  transform-origin: bottom;
+  position: absolute;
+  top: 229px;
+  left: 690px;
+  height: 120px;
+  width: 7px;
+  background-color: blue;
+}
