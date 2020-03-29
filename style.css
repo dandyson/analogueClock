@@ -52,9 +52,6 @@ body {
 }
 
 /* CLOCK HANDS */
-.hands {
-  transform-origin: center right;
-}
 
 #hourHand {
   transform-origin: bottom;
