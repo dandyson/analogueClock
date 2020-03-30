@@ -1,84 +1,70 @@
 /* BASIC STYLES */
 
 body {
-  font-family: "Rubik", sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#clock {
-  border: 15px solid black;
-  border-radius: 50%;
-  height: 400px;
-  width: 400px;
+  background-color: #323232;
 }
 
 /* CLOCK FACE */
 
-#twelve {
+#clock {
   position: relative;
-  top: 20px;
-  left: 190px;
-  transform: rotate(90deg);
-  width: 20px;
-  border: 2px solid black;
+  height: 50%;
+  width: 30%;
+  min-height: 80x;
+  min-width: 100px;
+  border-radius: 50%;
+  border: 20px solid darkgray;
+  background: #fff url(/ios_clock.svg) no-repeat center;
+  background-size: 85%;
+  padding-bottom: 31%;
 }
 
-#three {
-  position: relative;
-  top: 190px;
-  left: 360px;
-  width: 20px;
-  border: 2px solid black;
-}
-
-#six {
-  position: relative;
-  top: 360px;
-  left: 190px;
-  transform: rotate(90deg);
-  width: 20px;
-  border: 2px solid black;
-}
-
-#nine {
-  position: relative;
-  top: 190px;
-  left: 10px;
-  width: 20px;
-  border: 2px solid black;
+/* CENTER CIRCLE */
+#clock:after {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 4%;
+  height: 4%;
+  z-index: 10;
 }
 
 /* CLOCK HANDS */
 
 #hourHand {
-  transform-origin: bottom;
+  background: green;
+  height: 16%;
+  left: 49.3%;
   position: absolute;
-  top: 270px;
-  left: 690px;
-  height: 79px;
-  width: 7px;
-  background-color: black;
+  top: 34%;
+  transform-origin: 50% 100%;
+  width: 2%;
 }
 
 #minuteHand {
-  transform-origin: bottom;
+  background: red;
+  height: 25%;
+  left: 49.3%;
   position: absolute;
-  top: 229px;
-  left: 690px;
-  height: 120px;
-  width: 7px;
-  background-color: red;
+  top: 25%;
+  transform-origin: 50% 100%;
+  width: 1%;
 }
 
 #secondHand {
-  transform-origin: bottom;
+  background: blue;
+  height: 28%;
+  left: 49.3%;
   position: absolute;
-  top: 229px;
-  left: 690px;
-  height: 120px;
-  width: 7px;
-  background-color: blue;
+  top: 22%;
+  transform-origin: 50% 100%;
+  width: 1%;
 }
